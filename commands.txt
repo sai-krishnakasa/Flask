@@ -1,0 +1,14 @@
+Installation :
+pip install Flask-Migrate 
+
+Initialize the migrations -> This will create a migrations folder:
+db = SQLAlchemy(app)
+migrate = Migrate(app, db)
+flask db init
+
+Staging the migrations :
+flask db migrate -m "migrate message"
+
+commiting the staging chnages to DB:
+flask db upgrade
+
